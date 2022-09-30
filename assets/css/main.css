@@ -1,0 +1,31 @@
+.card_produtos{
+  display: grid;
+}
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+.card_produtos-titulo{
+  font-weight: 700; 
+}
+
+  
+.card_produtos-link {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  text-decoration: none;
+  color:var(--botao-primario-comum-mobile);
+  font-weight: 700;
+  
+}
+
+.icon_arrow::after {
+  width: 16px;
+  height: 16px;
+  content: url('../img/arrow-left.svg');
+  padding: 0.1em;
+
+}

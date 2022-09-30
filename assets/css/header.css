@@ -1,0 +1,52 @@
+.header_logo{
+  background-color: var(--branco);
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+  align-items: center;
+
+}
+
+.icon_search{
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/search.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.button_login, .button_banner{
+  width: 133px;
+  padding: 1rem;
+  border: 1px solid var(--botao-secundario-comum-mobile);
+  text-align: center;
+  text-decoration: none;
+  color: var(--botao-secundario-comum-mobile);
+}
+.header_banner{
+  background-image: url("/assets/img/Hero.svg");
+  background-position: center;
+  background-size: 50vh;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  align-items: flex-start;
+}
+
+.banner_titulo{
+  font-size: 22px;
+  font-weight: 700;
+
+
+}
+.banner-titulo-texto{
+  font-size: 12px;
+}
+.button_banner{
+  background-color: var( --botao-primario-comum-mobile);
+  color: var(--white);
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+}

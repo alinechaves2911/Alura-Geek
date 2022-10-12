@@ -1,52 +1,71 @@
 .header_logo{
   background-color: var(--branco);
   display:flex;
-  flex-direction: row;
+  
   justify-content: space-between;
-  padding: 1em;
   align-items: center;
-
-}
-
-.icon_search{
-  width: 24px;
-  height: 24px;
-  background-image: url("../img/search.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.button_login, .button_banner{
-  width: 133px;
-  padding: 1rem;
-  border: 1px solid var(--botao-secundario-comum-mobile);
-  text-align: center;
-  text-decoration: none;
-  color: var(--botao-secundario-comum-mobile);
-}
-.header_banner{
-  background-image: url("/assets/img/Hero.svg");
-  background-position: center;
-  background-size: 50vh;
-  color: var(--white);
-  display: flex;
-  flex-direction: column;
   padding: 1em;
-  align-items: flex-start;
-}
-
-.banner_titulo{
-  font-size: 22px;
-  font-weight: 700;
 
 
 }
-.banner-titulo-texto{
-  font-size: 12px;
+
+.menu{
+  display:flex;
+  justify-content: space-between;
 }
-.button_banner{
-  background-color: var( --botao-primario-comum-mobile);
-  color: var(--white);
-  display: flex;
-  align-self: flex-start;
-  justify-content: center;
+
+.login__botao{
+  margin-right: 1rem;
+}
+.icon_search{
+  width: 50px;
+  height: 50px;
+  background: url("../img/search.svg") center no-repeat;
+  border: none;
+
+}
+.search{
+  display:none
+}
+
+@media screen and (min-width: 768px) {
+  .header_logo{
+   
+    display:flex;
+    justify-content: space-evenly;
+    
+  }
+  .login__botao{
+ 
+    justify-self: flex-end;
+  }
+  .header__logo--imagem{
+    margin-left: -50px
+  }
+  .menu{
+    flex-direction: row-reverse;
+
+    
+  }
+  .icon_search{
+    display:none;
+  }
+  .search{
+    display:block;
+    padding: 8px 16px;
+    gap: 8px;
+    width: 272px;
+    height: 40px;
+    background-color: var(--input);
+    border:none;
+    border-radius:20px;
+    color:var(--placeholder);
+  }
+  .search::placeholder{
+    background: url("../img/search.svg") right center no-repeat;
+    opacity: 0.5;
+  }
+  .login__botao{
+    margin-left: 5rem;
+  }
 }

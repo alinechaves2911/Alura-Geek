@@ -1,6 +1,7 @@
 .card_produtos{
-  display: grid;
-  grid-template-columns: column;
+  display: flex;
+  flex-direction: column;
+
 }
 .card{
   display: flex;

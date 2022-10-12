@@ -1,0 +1,35 @@
+.header_banner{
+  background-image: url("/assets/img/Hero.svg");
+  background-position: center;
+  background-size:  100%;
+  background-repeat: no-repeat;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  align-items: flex-start;
+}
+
+.banner_titulo{
+  font-size: 22px;
+  font-weight: 700;
+
+}
+.banner-titulo-texto{
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px){
+  .header_banner{
+    padding-left: 3rem;
+    text-align: center;
+  }
+  .banner_titulo{
+    font-size:52px;
+
+  }
+  .banner-titulo-texto{
+    font-size:22px;
+    font-weight: 700;
+  }
+}

@@ -14,15 +14,25 @@
 <body>
   <header>
     <section class="header_logo">
-        <img src="/assets/img/Logo-mobile.svg" alt="Logo da Alura Geek">
-        <a href="#" class="button_login">Login</a>
-        <span class="icon_search" aria-label="Icone para pesquisar"></span>
+        <img src="/assets/img/Logo-mobile.svg" alt="Logo da Alura Geek" class="header__logo--imagem">
+       
+        <nav class="menu">
+          <a href="#" class="botao login__botao">Login</a>
+            
+           <div class="form">
+                <form action="#" class="nav__pesquisa">
+                  <input type="search" name="search" class="search" placeholder="O que deseja encontrar?">
+                  <button class="icon_search" aria-label="Icone para pesquisar"></button>
+                </form>
+           </div>
+        </nav>
+        
     </section>
     <section class="header_banner">
      
         <h2 class="banner_titulo">Dezembro Promocional</h2>
         <p class="banner-titulo-texto">Produtos selecionados com 33% de desconto</p>
-        <a href="#" class="button_banner">Ver consoles</a>
+        <a href="#" class=" botao botao__secundario">Ver consoles</a>
       </div>
     </section>
   </header>
@@ -34,8 +44,8 @@
         </div>
         <ul class="produto__itens">
           <li class="produto__itens-lista">
-            <img src="/assets/img/starwars3.svg" alt="Caneca do Strooper" class="produto__itens--imagem">
-            <h3 class="produto__nome-produto">Caneca do Strooper</h3>
+            <img src="/assets/img/starwars3.svg" alt="Caneca do Stormtrooper" class="produto__itens--imagem">
+            <h3 class="produto__nome-produto">Caneca do Stormtrooper</h3>
             <p class="produto__valor">R$ 60,00</p>
             <a href="#"class="produto__itens--link">Ver produto</a>
           </li>
@@ -46,14 +56,14 @@
             <a href="#"class="produto__itens--link">Ver produto</a>
           </li>
           <li class="produto__itens-lista">
-            <img src="/assets/img/starwars1.svg" alt="Miniatura do Mestre Yoda" class="produto__itens--imagem">
-            <h3 class="produto__nome-produto">Miniatura do Mestre Yoda</h3>
+            <img src="/assets/img/starwars1.svg" alt="Boneco  do Yoda" class="produto__itens--imagem">
+            <h3 class="produto__nome-produto">Boneco do Yoda</h3>
             <p class="produto__valor">R$ 60,00</p>
             <a href="#"class="produto__itens--link">Ver produto</a>
           </li>
           <li class="produto__itens-lista">
-            <img src="/assets/img/starwars2.svg" alt="Boneco do Strooper" class="produto__itens--imagem">
-            <h3 class="produto__nome-produto">Boneco do Strooper</h3>
+            <img src="/assets/img/starwars2.svg" alt="boneco do Stormtrooper" class="produto__itens--imagem">
+            <h3 class="produto__nome-produto">Boneco do Stormtrooper</h3>
             <p class="produto__valor">R$ 60,00</p>
             <a href="#"class="produto__itens--link">Ver produto</a>
           </li>
@@ -128,23 +138,25 @@
       </section>
 
       <section class="contato">
+        <article class="links">
           <img src="/assets/img/Logo-mobile.svg" alt="Logo da Alura Geek" class="logo__img">
-          <article class="links">
+         
               <ul class="lista__links--loja">
-                <li class="lista__links-itens"><a href="#" class="lista__links-link">Quem somos nós</a></li>
-                <li class="lista__links-itens"><a href="#" class="lista__links-link">Política de privacidade</a></li>
-                <li class="lista__links-itens"><a href="#" class="lista__links-link">Programa fidelidade</a></li>
-                <li class="lista__links-itens"><a href="#" class="lista__links-link">Nossas lojas</a></li>
-                <li class="lista__links-itens"><a href="#" class="lista__links-link">Quero ser franqueado</a></li>
-                <li class="lista__links-itens"><a href="#" class="lista__links-link">Anuncie aqui</a></li>
+                <li class="lista__links--itens"><a href="#" class="lista__links--link">Quem somos nós</a></li>
+                <li class="lista__links--itens"><a href="#" class="lista__links--link">Política de privacidade</a></li>
+                <li class="lista__links--itens"><a href="#" class="lista__links--link">Programa fidelidade</a></li>
+                <li class="lista__links--itens"><a href="#" class="lista__links--link">Nossas lojas</a></li>
+                <li class="lista__links--itens"><a href="#" class="lista__links--link">Quero ser franqueado</a></li>
+                <li class="lista__links--itens"><a href="#" class="lista__links--link">Anuncie aqui</a></li>
               </ul>
           </article>
           <address class="contato__formulario"></address>
-            <h2>Fale conosco</h2>
+           
               <form class="fale__consco">
-                <input type="text" class="fale__consco-input" placeholder="Nome">
+                <h2>Fale conosco</h2>
+                <input type="text" class="fale__consco--input" placeholder="Nome">
               <textarea class="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem"></textarea>
-              <button class="enviar">Enviar Mensagem</button>
+              <button class="botao__enviar botao__secundario">Enviar Mensagem</button>
             </form>
           </address>
       </section>

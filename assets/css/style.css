@@ -1,4 +1,5 @@
 @import url("header.css");
+@import url("banner.css");
 @import url("main.css");
 @import url("contato.css");
 @import url("rodape.css");
@@ -10,11 +11,27 @@
   --botao-primario-comum-mobile: #2A7AE4;
   --textos:#464646;
   --background-contato: #EAF2FD;
-  --bordas: #A2A2A2;
+  --input: #F5F5F5;
+  --placeholder:#A2A2A2;
 }
 
 body{
   Font-family: var(--font);
   font-size: 16px;
   font-weight:600;
+}
+.botao{
+  width: 133px;
+  padding: 1rem;
+  border: 1px solid var(--botao-secundario-comum-mobile);
+  text-align: center;
+  text-decoration: none;
+  color: var(--botao-secundario-comum-mobile);
+}
+.botao__secundario{
+  background-color: var( --botao-primario-comum-mobile);
+  color: var(--white);
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
 }

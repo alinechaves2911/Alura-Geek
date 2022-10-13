@@ -40,7 +40,7 @@
 
 }
 
-.fale__consco--input, .mensagem{
+.input__formulario, .mensagem{
   margin-bottom: 1em;
   width: 320px;
   padding: 1em;
@@ -48,8 +48,8 @@
   border:  none;
   box-sizing: border-box;
 }
-.fale__consco--input::placeholder .mensagem::placeholder{
-  color: var(--bordas);
+
+.input__formulario::placeholder.mensagem::placeholder{
   font-style: normal;
   font-weight: 400;
 }
@@ -97,8 +97,8 @@
     display: block;
     width: 150px;
   }
-  .mensagem, .fale__consco--input{
-    width: 500px
+  .mensagem, .input__formulario{
+    width: 500px;
   }
   .fale__titulo{
     font-weight: 700;

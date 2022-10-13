@@ -3,6 +3,8 @@
 @import url("main.css");
 @import url("contato.css");
 @import url("rodape.css");
+@import url("Login__main.css");
+@import url("cadastro-produtos.css");
 
 :root{
   --white: #FFFFFF;
@@ -11,7 +13,7 @@
   --botao-primario-comum-mobile: #2A7AE4;
   --textos:#464646;
   --background-contato: #EAF2FD;
-  --input: #F5F5F5;
+  --background: #F5F5F5;
   --placeholder:#A2A2A2;
 }
 
@@ -19,6 +21,7 @@ body{
   Font-family: var(--font);
   font-size: 16px;
   font-weight:600;
+  background-color: var(--background);
 }
 .botao{
   width: 133px;

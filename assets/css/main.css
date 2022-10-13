@@ -33,7 +33,7 @@
 }
 .produto__itens{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 0;
   padding: 0;
   flex-wrap: wrap;
@@ -57,4 +57,20 @@
   color: var(--botao-primario-comum-mobile);
   font-weight: 700;
 
+}
+.desktop{
+  display: none;
+}
+@media screen and (min-width: 760px){
+  .desktop{
+    display: none;
+  }
+}
+@media screen and (min-width: 1088px){
+  .desktop{
+    display: block;
+  }
+  .card_produtos{
+    margin: 60px 100px;
+  }
 }

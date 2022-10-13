@@ -9,9 +9,14 @@
 }
 
 .logo__img{
-  width: 90%;
-  margin-top: 1rem;
+  background: url('../img/Logo-mobile.svg') center no-repeat;
+  width: 200px;
+  height: 50px;
+
   
+}
+.logo_img-contato{
+  display: none;
 }
 .lista__links--loja{
   display: flex;
@@ -43,7 +48,7 @@
   border:  none;
   box-sizing: border-box;
 }
-.fale__consco--input, .mensagem::placeholder{
+.fale__consco--input::placeholder .mensagem::placeholder{
   color: var(--bordas);
   font-style: normal;
   font-weight: 400;
@@ -61,12 +66,42 @@
   .contato{
     display: flex;
     flex-direction: row;
+    text-align: center;
     justify-content: space-between;
-    align-items: center;
-    
-  
+    padding-right: 1rem;
   }
-  .fale__consco{
-    margin-right: 3rem;
+  .logo__img{
+    padding-top: 2rem;
+    
+  }
+  .logo_img-contato{
+    display: none;
+  }
+  .fale__titulo{
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1088px){
+  .contato{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-evenly;
+    
+  }
+  .logo__img{
+    display: none;
+  }
+  .logo_img-contato{
+    display: block;
+    width: 150px;
+  }
+  .mensagem, .fale__consco--input{
+    width: 500px
+  }
+  .fale__titulo{
+    font-weight: 700;
+    font-size: 16px;
   }
 }

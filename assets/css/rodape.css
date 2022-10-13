@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   padding: 1em;
-  height: 102px;
   background-color: var(--white);
 }
 .desenvolvido{
@@ -12,4 +11,8 @@
   font-size: 16px;
   
   text-align: center;
+}
+.login__input{
+  align-self: center;
+  width: 260px;
 }
